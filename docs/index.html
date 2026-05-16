@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>X For You 推荐算法 · 中文详解</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="X (Twitter) For You 推荐算法的详细中文分析：架构、组件、Phoenix 模型、候选隔离注意力、过滤规则与运行方式。">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --theme-color: #1d9bf0;
+      --theme-color-secondary: #0f7fc1;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .sidebar { width: 320px; }
+    .sidebar > h1 { margin: 0; padding: 1.2rem 0 0.6rem; font-size: 1.4rem; }
+    .sidebar ul li a { line-height: 1.6; }
+    .sidebar-nav > ul > li > a { font-weight: 600; }
+    .markdown-section { max-width: 860px; }
+    .markdown-section h1 { border-bottom: 2px solid var(--theme-color); padding-bottom: 0.4em; }
+    .markdown-section h2 { border-bottom: 1px solid #eee; padding-bottom: 0.3em; margin-top: 2em; }
+    .markdown-section table { display: table; width: 100%; }
+    .markdown-section pre { background: #f6f8fa; }
+    .markdown-section code { color: #c7254e; background: #f9f2f4; padding: 2px 4px; border-radius: 3px; }
+    .markdown-section pre > code { color: #333; background: none; padding: 0; }
+    .app-name-link img { max-height: 36px; }
+    .content { left: 320px; }
+    @media screen and (max-width: 768px) {
+      .sidebar { width: 280px; }
+      .content { left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中…</div>
+  <script>
+    window.$docsify = {
+      name: 'X For You 推荐算法',
+      repo: 'https://github.com/yingwang/x-algorithm',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      maxLevel: 4,
+      homepage: 'README.md',
+      search: {
+        placeholder: '搜索…',
+        noData: '没有结果',
+        depth: 4,
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '失败',
+        successText: '已复制',
+      },
+      pagination: {
+        previousText: '上一节',
+        nextText: '下一节',
+        crossChapter: true,
+      },
+      themeColor: '#1d9bf0',
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-rust.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+</body>
+</html>
