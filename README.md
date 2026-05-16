@@ -2,9 +2,13 @@
 
 **语言 / Language:** [中文](#x-for-you-推荐算法中文详解) · [English](#x-for-you-feed-algorithm)
 
+> 📖 **中文详解站点（带左侧目录）：** https://yingwang.github.io/x-algorithm/
+
 ---
 
 # X For You 推荐算法（中文详解）
+
+> 完整可浏览版本（左侧目录 / 搜索 / 翻页）：**https://yingwang.github.io/x-algorithm/**
 
 本仓库公开了 X（前 Twitter）"For You" 信息流的核心推荐系统：把**关注内容（in-network）**与**通过机器学习检索到的非关注内容（out-of-network）**统一打分排序，最终输出给用户的个性化时间线。整套排序模型基于 **Grok 风格的 Transformer**，从 [xAI Grok-1 开源版本](https://github.com/xai-org/grok-1)移植后改造为推荐场景。
 
